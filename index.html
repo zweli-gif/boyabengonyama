@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayikho · A/B Test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css" />
+</head>
+<body>
+  <div class="shell">
+    <div class="shell-meta">
+      <h1>Ayikho</h1>
+      <p>TVET N4 Financial Accounting study app. This version runs an A/B test for <strong>Simple vs Detail</strong> and <strong>Video vs No‑video</strong>.</p>
+      <div class="pill">✅ Ayikho-style UI · All modules unlocked</div>
+      <div class="pill">📲 WhatsApp reminders: coming soon</div>
+    </div>
+
+    <div class="phone">
+      <div class="statusbar">
+        <div class="sb-left">21:07 <span class="sb-dim">4G</span></div>
+        <div class="sb-right">●●●●●</div>
+      </div>
+
+      <div id="app"></div>
+
+      <div class="tabs">
+        <div class="tab active" data-nav="home" onclick="location.hash='#/home'">Learn</div>
+        <div class="tab" data-nav="progress" onclick="location.hash='#/progress'">Progress</div>
+        <div class="tab" data-nav="badges" onclick="location.hash='#/badges'">Badges</div>
+        <div class="tab" data-nav="profile" onclick="location.hash='#/profile'">Profile</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/ab.js"></script>
+  <script src="js/tracker.js"></script>
+  <script src="content/simple.js"></script>
+  <script src="content/detail.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
